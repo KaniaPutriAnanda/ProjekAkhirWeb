@@ -172,6 +172,10 @@ tr:nth-child(even){
     top: 8px;
 }
 
+.head {
+    font-size: 130%;
+}
+
 /* MAKANAN */
 
 .kotakForm {
