@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Concert+One&family=Dosis:wght@500&family=DynaPuff&family=PT+Sans+Caption:wght@700&display=swap');
+
+*{
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+}
+
+body {
+    background: #caa883;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html, body {
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+}
+/* 
+.bigbox{
+} */
+
+nav {
+    display: flex;
+    background-color: #caa883;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: aliceblue;
+    align-items: center;
+    margin: auto;
+    height:  80px;
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 0.8em;
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav ul li a i {
+    cursor: pointer;
+}
+
+nav ul li a :hover{
+    color: black;
+}
+
+  /* Hamburger Menu */
+
+  .menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    background-color: #caa883;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    transition: all 0.5s;
+
+} */
+
+
+/* HAMBURGER MENU ANIMATION */
+ .menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: aliceblue;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: aliceblue;
+    transform: rotate(45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity:0 ;
+    transform: scale(0);
+}
+
+
+/* RESPONSIV BREAKPOINT */
+
+@media screen and (max-width : 768px) {
+    nav ul{
+        width: 50%;
+    }
+    
+}
+/* ukuran mobile */
+@media screen and (max-width : 576px) {
+    .menu-toggle{
+        display: flex;
+
+    }
+    nav ul{
+        display: absolute;
+        right: 0;
+        margin-right: -155px;
+        margin-top: 300px;
+        height: 100vh;
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        z-index: 3;
+        background-color: #caa883;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+
+    }
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.about {
+    float: left;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    color: whitesmoke;
+    font-size: 4vw;
+}
+
+.kdinzy {
+    float: left;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    color: whitesmoke;
+    font-size: 2vw;
+}
+
+.kotakHeader{
+    width: 100%;
+   float: left;
+}
+
+.kotakHeaderFoto {
+    width: 100%;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 400px;
+}
+
+.kotakdisc{
+    align-items: center;
+    left: 0;
+    right: 0;
+    padding: 0px 0px;
+    padding-top: 15%;
+    display: block;
+}
+
+.kotakdisc1{
+    align-items: center;
+    left: 0;
+    right: 0;
+    padding-top: 15%;
+    display: block;
+}
+
+.ktkdiscover1{
+    position: relative;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.discover1 {
+    font-family: 'Dosis', sans-serif;
+    color: #b5936f;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.bigktkdiscover {
+    float: left;
+    margin-top: 25%;
+}
+
+.ktkdiscover2{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.discover2 {
+    font-family: 'Dosis', sans-serif;
+    color: #b5936f;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.taste {
+    font-family: 'Dosis', sans-serif;
+    padding-top: 5px;
+    color: whitesmoke;
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.traditional {
+    font-family: 'Dosis', sans-serif;
+    padding-top: 5px;
+    color: whitesmoke;
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.taste1 {
+    font-family: 'Bitter', serif;
+    line-height: 24px;
+    color: whitesmoke;
+    font-size: 1vw;
+    text-align: center;
+    
+}
+
+.traditional1 {
+    font-family: 'Bitter', serif;
+    line-height: 24px;
+    color: whitesmoke;
+    letter-spacing: 0;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.kotak {
+    margin-top: 20%;
+    float: left;
+    width: 100%;
+}
+
+.subKotak{
+    float: left;
+    width: 100%;
+    height: 300%;
+    background-color: whitesmoke;
+    color: #c09d79;
+}
+
+.foto {
+    float: left;
+    position: relative;
+    filter: brightness(60%);
+    height: 800px;
+}
+
+.foto1 {
+    float: left;
+    position: relative;
+    width: 30vw;
+}
+
+.history {
+    /* float: left; */
+    margin-left: 50%;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 10px;
+    /* color: whitesmoke; */
+    font-size: 1.3vw;
+    
+}
+
+.history1 {
+    width: 100%;
+    /* float: left; */
+    margin-left: 40%;
+    /* margin-right: 20%; */
+    font-family: 'Bitter', serif;
+    font-size: 1vw;
+    line-height: 24px;
+    /* color: whitesmoke; */
+}
+
+/* Contact Us */
+
+.kotak2 {
+    float: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: 10%;
+    letter-spacing: 5px;
+    color: whitesmoke;
+
+}
+
+.sub {
+    float: left;
+    width: 20%;
+    height: 290px;
+    background: #c09d79;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+    color: whitesmoke;
+    font-size: 1.2vw;
+    margin: 80px;
+}
+
+.subKotak1 {
+    float: left;
+    /* margin-right: 180px; */
+    /* margin-left: 60px; */
+}
+
+.subKotak2 {
+    float: left;
+    /* margin-right: 180px; */
+}
+
+.subKotak3 {
+    float: left;
+}
+
+.peta {
+    float: left;
+    margin-top: 40px;
+}
+.footer-about {
+    float: left;
+    background-color:#caa883;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 0;
+    /* padding-top: 30px; */
+}
+
+.footer p{
+    padding-top: 15px;
+}
+
+/* ALL */
+/* .bigboxbos {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+} */
+
+/* .bigbox {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7%;
+} */
+
+table {
+    position: relative;
+    z-index: 2;
+    /* left: 50%; */
+    /* top: 0px; */
+    /* transform: translate(-50%,-50%); */
+    /* width: 60%;  */
+    border-collapse: collapse;
+    /* border-spacing: 0; */
+    /* box-shadow: 0 2px 15px rgba(64,64,64,.7); */
+    /* border-radius: 12px 12px 0 0; */
+    /* overflow: hidden; */
+    }
+    
+td , th{
+    padding: 15px 20px;
+    text-align: center;        
+}
+       
+th{
+    background-color: #cba884;
+    color: #ebe0cd;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;   
+}
+       
+tr{
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Dosis', sans-serif;
+    color: #b32e2b;
+}
+       
+tr:nth-child(even){
+    background-color: #eeeeee;
+}
+    
+.order {
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+    top: 80px;
+    left: 300px;
+}
+    
+.ikon i{
+    position: relative;
+    float: left;
+    left: 1px;
+    top: px;
+}
+
+.head {
+    font-size: 130%;
+}
+
+.caribut {
+    display: flex;
+}
+
+.cari1 {
+    background-color: #cba884;
+}
+
+.search {
+    width: 50%;
+}
+
+
+
+.tabel2, .tabel3 {
+    padding-top: 30px;
+}
