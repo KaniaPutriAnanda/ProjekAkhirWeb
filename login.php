@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-login.css">
     <title>Login</title>
 </head>
 <body>
@@ -13,18 +13,17 @@
 	<div class="box login">
 		<form action="" method="post">
             <div class="logo">
-                <img src="img/logo2.png" alt="Logo K'dinzy Restaurant & Bar" width="50%">
+                <img src="img/K'dinzy.png" alt="Logo K'dinzy Restaurant & Bar" width="50%">
             </div>
 			<input type="text" name="user" placeholder="email atau username" class="input" required autocomplete="off">
 			<input type="password" name="password" placeholder="password" class="input" required autocomplete="off">
-			<a href="#">Forgot your password?</a>
 			<input type="submit" name="login" value="Login" class="submit"><br><br>
 		</form>
 	</div>
     <div class="box register">
             <form action="" method="post">
             <div class="logo">
-                <img src="img/logo2.png" alt="Logo K'dinzy Restaurant & Bar" width="40%">
+                <img src="img/K'dinzy.png" alt="Logo K'dinzy Restaurant & Bar" width="40%">
             </div> 
                 <input type="email" name="email" class="input" placeholder="Masukkan email" required autocomplete="off">
                 <input type="text" name="username" class="input" placeholder="Masukkan username" required autocomplete="off">
@@ -78,7 +77,7 @@
                 
                 echo "<script>
                         alert('Selamat Datang $user_admin');
-                        document.location.href = 'index-admin.php';
+                        document.location.href = 'admin.php';
                     </script>";
             }
             else if(password_verify($password, $row['psw'])){
@@ -87,7 +86,7 @@
                 
                 echo "<script>
                         alert('Selamat Datang $username');
-                        document.location.href = 'index-user.php';
+                        document.location.href = 'home.php';
                     </script>";
             }else{
                 echo "<script>
