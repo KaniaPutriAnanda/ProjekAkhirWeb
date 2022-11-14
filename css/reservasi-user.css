@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Concert+One&family=Dosis:wght@500&family=DynaPuff&family=PT+Sans+Caption:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:  'Dosis', sans-serif;
+    /* background:url("https://pbs.twimg.com/media/FhC0JMbUoAAgj8Q?format=png&name=small") center/cover no-repeat; */
+    /* background-image: url('img/live.jpg'); */
+}
+.banner{
+    min-height: 100vh;
+    background-color: #ebcaa7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #b5936f;
+    padding-bottom: 20px;
+    background:url("https://pbs.twimg.com/media/FhC0JMbUoAAgj8Q?format=png&name=small") center/cover no-repeat;
+    /* background-image: url('img/live.jpg'); */
+    z-index: -1;
+}.bigboxForm {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4em;
+}
+
+form {
+  padding: 1em;
+  background: #e2be99;
+  /* border: 1px solid white; */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -3rem;
+  max-width: 670px;
+  height: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  border-radius: 0.4vw;
+
+}
+
+.atasForm{
+    color: whitesmoke;
+}
+
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  border: 0;
+}
+
+form button:hover {
+  background: gold;
+}
+
+label {
+  text-align: left;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+input {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+input:focus {
+  outline: 3px solid #e2be99;
+}
+
+@media (min-width: 400px) {
+  form {
+    overflow: hidden;
+  }
+
+  label {
+    float: left;
+    width: 200px;
+  }
+
+input {
+    float: left;
+    width: calc(100% - 200px);
+    font-family: 'Bitter', serif;
+}
+
+select {
+    font-family: 'Bitter', serif;
+}
+
+ #button1 {
+    cursor: pointer;
+    border-radius: 0.9vh;
+    background-color: whitesmoke;
+    width: 15%;
+    height: 9%;
+    margin-top: 100px;
+    color: #e2be99;
+    display: flex;
+    font-size: 0.8vw;
+ }
+
+.submitt{
+    position: relative;
+    left: 15px;
+    font-family: 'Dosis', sans-serif;
+    top: -3px;
+}}
+.footer-reservasi {
+    float: left;
+    background-color:#b5936f;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 0;
+    /* padding-top: 30px; */
+}
+
+.footer p{
+    padding-top: 15px;
+}
+
+
+
+nav {
+    display: flex;
+    background-color: #caa883;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: aliceblue;
+    align-items: center;
+    margin: auto;
+    height:  80px;
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 0.8em;
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav ul li a i {
+    cursor: pointer;
+}
+
+nav ul li a :hover{
+    color: black;
+}
+
+    /* Hamburger Menu */
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    background-color: #caa883;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    transition: all 0.5s;
+
+} */
+
+
+/* HAMBURGER MENU ANIMATION */
+ .menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: aliceblue;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: aliceblue;
+    transform: rotate(45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity:0 ;
+    transform: scale(0);
+}
+
+/* RESPONSIV BREAKPOINT */
+
+@media screen and (max-width : 768px) {
+    nav ul{
+        width: 50%;
+    }
+    
+}
+/* ukuran mobile */
+@media screen and (max-width : 576px) {
+    .menu-toggle{
+        display: flex;
+
+    }
+    nav ul{
+        display: absolute;
+        right: 0;
+        margin-right: -155px;
+        margin-top: 300px;
+        height: 100vh;
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        z-index: 5;
+        background-color: #caa883;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+
+    }
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

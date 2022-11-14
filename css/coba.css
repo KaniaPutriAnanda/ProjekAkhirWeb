@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Concert+One&family=Dosis:wght@500&family=DynaPuff&family=PT+Sans+Caption:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* font-family: 'Poppins'; */
+}
+body{
+    /* font-family: 'Poppins'; */
+    background: #ebe0cd;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* LIHAT */
+.bigboxbos {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.bigbox {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 7%; */
+}
+
+table {
+     z-index: 2;
+     left: 0%;
+     top: 0px;
+     /* transform: translate(-50%,-50%); */
+     /* width: 60%;  */
+     border-collapse: collapse;
+     border-spacing: 0;
+     /* box-shadow: 0 2px 15px rgba(64,64,64,.7); */
+     /* border-radius: 12px 12px 0 0; */
+     overflow: hidden;
+     width: 100%;
+    }
+    
+td , th{
+    padding: 15px 20px;
+    text-align: center;        
+}
+       
+th{
+    background-color: #cba884;
+    color: #ebe0cd;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;   
+}
+       
+tr{
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Dosis', sans-serif;
+    color: #cba884;
+}
+       
+tr:nth-child(even){
+    background-color: #eeeeee;
+}s
+    
+.order {
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+    top: 80px;
+    left: 300px;
+}
+    
+
+.head {
+    font-size: 130%;
+}
+
+.tabel2, .tabel3 {
+    padding-top: 30px;
+}
+
+#keyword {
+    width: 230px;
+}
+
+#cari {
+    position: relative;
+    left: -48px;
+    float: left;
+    margin-right: 850px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    background: #cba884;
+}
+.table0 td {
+    background: #cba884;
+}
+
+/* MAKANAN */
+
+.bigboxForm {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4em;
+}
+
+form {
+  padding: 1em;
+  background: #e2be99;
+  /* border: 1px solid white; */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 9rem;
+  max-width: 600px;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  border-radius: 0.4vw;
+
+}
+
+.atasForm{
+    color: whitesmoke;
+}
+
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  border: 0;
+}
+
+form button:hover {
+  background: gold;
+}
+
+label {
+  text-align: left;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+input {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+input:focus {
+  outline: 3px solid #e2be99;
+}
+
+@media (min-width: 400px) {
+  form {
+    overflow: hidden;
+  }
+
+  label {
+    float: left;
+    width: 200px;
+  }
+
+input {
+    float: left;
+    width: calc(100% - 200px);
+}
+
+ #button1 {
+    cursor: pointer;
+    border-radius: 0.9vh;
+    background-color: whitesmoke;
+    width: 15%;
+    height: 9%;
+    margin-top: 100px;
+    color: #e2be99;
+    display: flex;
+    font-size: 0.6vw;
+ }
+
+.submitt{
+    position: relative;
+    left: 10px;
+    font-family: 'Dosis', sans-serif;
+    top: -3px;
+}}
+
+/* ADMIN */
+.profil {
+    width: 10px;
+    box-sizing: border-box;
+    margin: 160px;
+    margin-top: 80px;
+}
+
+.profil1, .profil2, .profil3 {
+    float: left;
+}
+
+.admin {
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    color: #cba884;
+    letter-spacing: 8px;
+    margin-top: 80px;
+}
+
+.hapus {
+    position: relative;
+    left: 90px;
+}
