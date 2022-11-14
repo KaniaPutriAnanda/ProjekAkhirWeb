@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kdinzy</title>
-    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/style-index.css?vz">
     <link rel="stylesheet" href="#">
     <script src="jquery.js"></script>
     <style media="screen">
@@ -18,14 +18,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color :#b32d2a;
+    background-color :#f1d7be;
 } 
 .container{
-    width: 2430px;
+    width: 3500px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
-    left: 10%;
+    top: 48.1%;
+    left: 0;
     overflow: hidden;
     border: 0px solid #ffffff;
     border-radius: 5px;
@@ -67,43 +67,45 @@ img{
 }
     </style>
 </head>
-<body style = background-color : #ca4153;>
+<body style = background-color : #ebcaa7>
 <nav>
-        <div class="wrapper">
-            <div class="menu">
-                <ul>
-                    <li class="button1"><a href="#"><b>Home</b></a></li>
-                    <li class="button1"><a href="halaman baru.html"><b>About Us</b></a></li>
-                    <li class="button1"><a href="input-user.php"><b>Sign In</b></a></li>
-                </ul>
-            </div>
 
-        </div>
+        <ul>
+            <li> <a href="login.php ">Sign In</a></li>
+        </ul>
+
     </nav>
-    
+<script src="js/home.js"></script>
 
     
 
     <div class="container">
         <div class="wrap">
-            <img src="https://pbs.twimg.com/media/FgNK1LMVIAEN6v0?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgNK1LMVIAEN6v0?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgNK1LMVIAEN6v0?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgNK1LMVIAEN6v0?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgPOet0VUAAx3kS?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgNK1LMVIAEN6v0?format=png&name=900x900">
-            <img src="https://pbs.twimg.com/media/FgNK1LMVIAEN6v0?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+            <img src="https://pbs.twimg.com/media/FgsWyRfUUAAKJus?format=png&name=900x900">
+           
+            
             
         </div>
     </div>
@@ -158,6 +160,12 @@ img{
             </div>
         </article>
 </div>
+<div class="footer">
+            <footer>
+            <p>©Copyright 2022 - by Kania Medina Risma</p>
+            </footer>
+        </div>
+        
 
 
 
