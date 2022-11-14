@@ -3,6 +3,7 @@
     if(isset($_POST['submit'])){
         $nama = $_POST['nama'];
         $harga = $_POST['harga'];
+        $tglinput = $_POST['tglinput'];
 
         $gambar = $_FILES['gambar']['name'];
         $x = explode('.',$gambar);
@@ -12,8 +13,8 @@
         $tmp = $_FILES['gambar']['tmp_name'];
         
         if(move_uploaded_file($tmp, "img/".$gambar_baru)){
-            $query = "INSERT INTO makanan
-            VALUES ('', '$nama', '$harga', '$gambar_baru')";
+            $query = "INSERT INTO minuman
+            VALUES ('', '$nama', '$harga', '$tglinput', '$gambar_baru')";
 
             $result = $db->query($query);
 
@@ -44,7 +45,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="admin3.css?v8">
+    <link rel="stylesheet" href="css/admin4.css?v8">
     <!-- <style><?php include 'admin.css' ?></style> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -54,7 +55,7 @@
 <nav>
     <ul>
         <li>
-            <a href="#" class="logo">
+            <a href="lihat.php" class="logo">
                 <i class="fas fa-search"></i>
                 <span class="nav-item">Lihat  Menu</span>
             </a>
@@ -72,25 +73,25 @@
                 </ul>
         </li>
         <li>
-            <a href="#">
+            <a href="lihat-edit.php">
                 <i class="fas fa-edit"></i>
                 <span class="nav-item">Update Menu</span>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="lihat-hapus.php">
                 <i class="fas fa-trash"></i>
                 <span class="nav-item">Hapus Menu</span>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="lihat_reservasi.php">
                 <i class="fas fa-cash-register"></i>
-                <span class="nav-item">Kasir</span>
+                <span class="nav-item">Reservasi</span>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="logout.php">
                 <i class="fas fa-sign-out-alt"></i>
                 <span class="nav-item">Signout</span>
             </a>
@@ -111,6 +112,7 @@
                     <label for="">Foto </label>
                     <input type="file" name="gambar" required><br>
                 
+                    <input type="hidden" name="tglinput" value=<?=date("d-m-Y")?>>
                     <button type="submit" name="submit" id="button1" class="btn btn-primary deep-purple btn-block "><h1 class="submitt">Submit</h1></button>
                 
                 </form>
